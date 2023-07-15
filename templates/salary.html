@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Salary</h1>
+    <form method="post" action="/salary">
+        <input type="text" name="token" placeholder="Token">
+        <button type="submit">Get Personal Data</button>
+    </form>
+    {% if error_message %}
+    <p class="error">{{ error_message }}</p>
+    {% endif %}
+</body>
+</html>

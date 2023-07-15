@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Token</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Your Token</h1>
+    <p>Token: {{ token }} </p>
+    <p>Expiration: {{ token_expiration }} </p>
+    <button onclick="copyToClipboard('{{ token | safe }}')">Copy Token</button>
+</body>
+<script src="static/js/token.js"></script>
+</html>
